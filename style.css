@@ -6,7 +6,7 @@
 }
 
 .container{
-  width: 150%;
+  width: 100%;
   min-height: 100vh;
   background: linear-gradient(135deg,#153677,#4e085f);
   padding: 10px;
@@ -58,7 +58,38 @@ button{
   border-radius: 40px;
 }
 
-
+@media (min-width:320px) and (max-width:479px) {
+  .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+  }
+  input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 16px;
+    font-weight: 12px;
+  }
+  button{
+    position: absolute;
+    left: 60%;
+    border: none;
+    outline: none;
+    padding: 14px 30px;
+    background: #ff5845;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+  }
+  
+}
 ul li{
   list-style: none;
   font-size: 17px;
